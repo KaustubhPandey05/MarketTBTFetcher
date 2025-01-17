@@ -39,7 +39,7 @@ int HandleClientSide::sendData(char callType,uint8_t resendSeq)const
 int HandleClientSide::recieveData(char* buffer,int bufferSize)const
 {
     int buffRead=recv(sockFd,buffer,bufferSize,0);
-    if(buffRead<=0)
+    if(buffRead<0)
     {
         std::perror("Error in reciveing data");
         throw std::runtime_error("data recieving error");

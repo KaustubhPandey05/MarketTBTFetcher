@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/kaus/ABX/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+ABX_H	AbxLib.h	/^#define ABX_H$/;"	d
+AbxLib	AbxLib.h	/^namespace AbxLib {$/;"	n
+BUFFER_SIZE	main.cpp	/^constexpr short BUFFER_SIZE {1024};$/;"	v	typeref:typename:short
+ConnectToServer	HandleClient.cpp	/^void HandleClientSide::ConnectToServer()$/;"	f	class:HandleClientSide	typeref:typename:void
+FetchMTBT	main.cpp	/^void FetchMTBT(std::string_view serverIP,std::string_view port,std::string_view outFileName)$/;"	f	typeref:typename:void
+HANDLECLIENTSIDE_H	HandleClient.h	/^#define HANDLECLIENTSIDE_H$/;"	d
+HandleClientSide	HandleClient.cpp	/^HandleClientSide::HandleClientSide(std::string_view serverAddress,std::string_view port)$/;"	f	class:HandleClientSide
+HandleClientSide	HandleClient.h	/^class HandleClientSide$/;"	c
+HandlePacket	HandlePacket.h	/^class HandlePacket$/;"	c
+PORT	main.cpp	/^const std::string PORT{"3000"};$/;"	v	typeref:typename:const std::string
+Packet	HandlePacket.h	/^    struct Packet $/;"	s	class:HandlePacket
+TwiddleLong	AbxLib.h	/^    inline int TwiddleLong(const char* buffer) $/;"	f	namespace:AbxLib	typeref:typename:int
+__anonaa2e105a0102	HandlePacket.cpp	/^    std::sort(packets.begin(), packets.end(), [](const Packet& a,const Packet& b) {$/;"	f	function:HandlePacket::sortPackets	file:
+addPacket	HandlePacket.cpp	/^void HandlePacket::addPacket(const char* buffer) $/;"	f	class:HandlePacket	typeref:typename:void
+buySell	HandlePacket.h	/^        char buySell;$/;"	m	struct:HandlePacket::Packet	typeref:typename:char
+closeConnection	HandleClient.cpp	/^void HandleClientSide::closeConnection()const$/;"	f	class:HandleClientSide	typeref:typename:void
+getSeqMisMatch	HandlePacket.cpp	/^std::vector<int> HandlePacket::getSeqMisMatch()$/;"	f	class:HandlePacket	typeref:typename:std::vector<int>
+initiateRecovery	HandlePacket.cpp	/^void HandlePacket::initiateRecovery(std::string_view serverAddress,std::string_view port)$/;"	f	class:HandlePacket	typeref:typename:void
+main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+outputFileName	main.cpp	/^const std::string outputFileName = "\/home\/kaus\/OUT_FILES\/dump.json";$/;"	v	typeref:typename:const std::string
+packets	HandlePacket.h	/^    std::vector<Packet> packets{};$/;"	m	class:HandlePacket	typeref:typename:std::vector<Packet>
+parsePacket	HandlePacket.cpp	/^HandlePacket::Packet HandlePacket::parsePacket(const char* buffer)const$/;"	f	class:HandlePacket	typeref:typename:HandlePacket::Packet
+port	HandleClient.h	/^    std::string port;$/;"	m	class:HandleClientSide	typeref:typename:std::string
+price	HandlePacket.h	/^        int price;$/;"	m	struct:HandlePacket::Packet	typeref:typename:int
+quantity	HandlePacket.h	/^        int quantity;$/;"	m	struct:HandlePacket::Packet	typeref:typename:int
+receivedPackets	HandlePacket.h	/^    std::map<int, bool> receivedPackets;$/;"	m	class:HandlePacket	typeref:typename:std::map<int,bool>
+recieveData	HandleClient.cpp	/^int HandleClientSide::recieveData(char* buffer,int bufferSize)const$/;"	f	class:HandleClientSide	typeref:typename:int
+sendData	HandleClient.cpp	/^int HandleClientSide::sendData(char callType,uint8_t resendSeq)const$/;"	f	class:HandleClientSide	typeref:typename:int
+sequence	HandlePacket.h	/^        int sequence;$/;"	m	struct:HandlePacket::Packet	typeref:typename:int
+serverAddress	HandleClient.h	/^    std::string serverAddress;$/;"	m	class:HandleClientSide	typeref:typename:std::string
+serverAddress	main.cpp	/^const std::string serverAddress = "127.0.0.1";$/;"	v	typeref:typename:const std::string
+sockFd	HandleClient.h	/^    int sockFd;   $/;"	m	class:HandleClientSide	typeref:typename:int
+sortPackets	HandlePacket.cpp	/^void HandlePacket::sortPackets() $/;"	f	class:HandlePacket	typeref:typename:void
+symbol	HandlePacket.h	/^        char symbol[5];$/;"	m	struct:HandlePacket::Packet	typeref:typename:char[5]
+writeToOutFile	HandlePacket.cpp	/^void HandlePacket::writeToOutFile(std::string_view fileName)const\/\/Alt json lib can be used bu/;"	f	class:HandlePacket	typeref:typename:void
+~HandleClientSide	HandleClient.cpp	/^HandleClientSide::~HandleClientSide()$/;"	f	class:HandleClientSide
